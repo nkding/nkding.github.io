@@ -5,7 +5,6 @@ permalink: /research/
 author_profile: true
 ---
 
-# Research
 
 My research focuses on **human-centered artificial intelligence for intelligent transportation systems**, with an emphasis on understanding human perception, cognition, and decision-making in complex traffic environments. The long-term goal is to develop safer, more adaptive, and more human-like autonomous driving systems through brain-inspired intelligence and traffic safety research.
 

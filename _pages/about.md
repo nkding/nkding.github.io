@@ -2,9 +2,9 @@
 permalink: /
 title: "About Me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+#redirect_from: 
+#  - /about/
+#  - /about.html
 ---
 
 I am an Associate Professor and Ph.D. Supervisor at the Intelligent Transportation Systems Research Center, Wuhan University of Technology. My research lies at the intersection of **Brain-inspired Vision, Computer Vision, Driving Behavior, Traffic Safety, and Intelligent Transportation Systems**. I am particularly interested in understanding how **visual perception** shapes driving decisions and how human cognitive mechanisms can inspire **safer autonomous driving systems**.
