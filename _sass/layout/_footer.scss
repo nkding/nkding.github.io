@@ -69,8 +69,12 @@
 }
 
 .page__footer-copyright {
-  font-family: $global-font-family;
-  font-size: $type-size-7;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.2;
+  font-family: $global-font-family;  
 }
 
 .page__footer-follow {
