@@ -60,6 +60,9 @@
 @media screen and (max-width: 768px) {
   /* don't pin the footer on mobile devices */
   .page__footer {
+    margin-top: 1em;
+    padding: 0.5em 0;
+    min-height: auto;
     position: relative;
     bottom: auto;
   }
