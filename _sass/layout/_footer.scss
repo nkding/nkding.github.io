@@ -63,7 +63,7 @@
     margin-top: 0.2em;
     padding: 0;
     min-height: auto;
-    position: relative;
+    position: fixed;
     bottom: auto;
   }
 }
@@ -72,7 +72,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-family: $global-font-family;  
 }
 
