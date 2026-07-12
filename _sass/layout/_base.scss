@@ -19,9 +19,6 @@ body {
   padding-bottom: 9em;
   font-family: $global-font-family;
   line-height: 1.5;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
