@@ -42,7 +42,7 @@ author:
   semantic         : # URL
   ssrn             : # URL
   pubmed           : "https://www.webofscience.com/wos/author/record/I-2922-2014"  # Web of Science
-  Researchgate     : "https://www.researchgate.net/profile/Naikan-Ding?ev=hdr_xprf"
+  researchgate     : "https://www.researchgate.net/profile/Naikan-Ding?ev=hdr_xprf"
   scopus           : # URL
   zotero           : # URL
 
