@@ -10,7 +10,7 @@
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0.5em;        /* 从 3em 减小到 0.5em */
+  margin-top: 0.3em;        /* 减小上外边距 */
   width: 100%;
   clear: both;
 
@@ -29,18 +29,23 @@
 
   footer {
     @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.2em;        /* 从 0.3em 减小到 0.2em */
+    margin: 0 auto;              /* 水平居中 */
+    margin-top: 0.1em;           /* 减小顶部外边距 */
     max-width: 100%;
-    padding: 0.2em 1em 0.3em; /* 上下内边距减小（原来是 0 1em 0.3em） */
+    padding: 0.1em 1em 0.1em;    /* 减小内边距 */
     
-    /* ===== 新增：内容居中 ===== */
-    text-align: center;
+    /* ===== 强制居中 ===== */
+    text-align: center !important;
     
-    /* 重置 ul 的默认内边距，防止居中偏移 */
+    /* 使用 Flexbox 增强居中 */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* 重置 ul 默认内边距 */
     ul {
-      padding-left: 0;
+      padding-left: 0 !important;
     }
 
     @include breakpoint($x-large) {
@@ -65,32 +70,38 @@
   }
 }
 
+/* 移动端适配 */
 @media screen and (max-width: 768px) {
-  /* don't pin the footer on mobile devices */
   .page__footer {
     position: relative;
     bottom: auto;
-    margin-top: 0.3em;        /* 移动端也相应减小 */
+    margin-top: 0.2em;        /* 移动端减小上边距 */
   }
 }
 
+/* ===== 版权信息强制居中 ===== */
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
-  /* 继承父级的 text-align: center，无需额外设置 */
+  text-align: center !important;
+  width: 100% !important;     /* 确保占满宽度 */
+  margin: 0 !important;       /* 清除外边距 */
+  padding: 0 !important;      /* 清除内边距 */
 }
 
+/* ===== 社交链接样式优化 ===== */
 .page__footer-follow {
   ul {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     list-style-type: none;
+    text-align: center !important;  /* 让列表居中 */
   }
 
   li {
     display: inline-block;
-    padding-top: 2px;         /* 从 5px 减小到 2px */
-    padding-bottom: 2px;      /* 从 5px 减小到 2px */
+    padding-top: 1px !important;     /* 减小上下内边距 */
+    padding-bottom: 1px !important;
     font-family: $sans-serif-narrow;
     font-size: $type-size-6;
     text-transform: uppercase;
@@ -102,7 +113,7 @@
   }
 
   a {
-    padding-right: 8px;       /* 从 10px 减小到 8px */
+    padding-right: 6px !important;   /* 减小链接间距 */
     font-weight: bold;
   }
 
