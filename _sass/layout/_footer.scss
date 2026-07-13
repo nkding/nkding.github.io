@@ -10,7 +10,7 @@
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 3em;
+  margin-top: 0.5em;        /* 从 3em 减小到 0.5em */
   width: 100%;
   clear: both;
 
@@ -31,10 +31,17 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.3em;
+    margin-top: 0.2em;        /* 从 0.3em 减小到 0.2em */
     max-width: 100%;
-    padding: 0 1em 0.3em;
+    padding: 0.2em 1em 0.3em; /* 上下内边距减小（原来是 0 1em 0.3em） */
+    
+    /* ===== 新增：内容居中 ===== */
     text-align: center;
+    
+    /* 重置 ul 的默认内边距，防止居中偏移 */
+    ul {
+      padding-left: 0;
+    }
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -63,12 +70,14 @@
   .page__footer {
     position: relative;
     bottom: auto;
+    margin-top: 0.3em;        /* 移动端也相应减小 */
   }
 }
 
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  /* 继承父级的 text-align: center，无需额外设置 */
 }
 
 .page__footer-follow {
@@ -80,8 +89,8 @@
 
   li {
     display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2px;         /* 从 5px 减小到 2px */
+    padding-bottom: 2px;      /* 从 5px 减小到 2px */
     font-family: $sans-serif-narrow;
     font-size: $type-size-6;
     text-transform: uppercase;
@@ -93,7 +102,7 @@
   }
 
   a {
-    padding-right: 10px;
+    padding-right: 8px;       /* 从 10px 减小到 8px */
     font-weight: bold;
   }
 
