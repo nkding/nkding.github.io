@@ -29,11 +29,11 @@ author:
   bio              : "Assoc. Prof., ITSC， Wuhan University of Technology"
   location         : "Wuhan, China"
   employer         : #"Red Brick University"
-  uri              : # URL
+  uri              : "http://its.whut.edu.cn/?jiaoshifengcai/917.html"  # 单位个人简介
   email            : "nkding@whut.edu.cn" 
 
   # Academic websites
-  academia         : "http://its.whut.edu.cn/?jiaoshifengcai/917.html"  # 单位个人简介
+  academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=JH2wOzsAAAAJ&hl=zh-CN"
   inspire-hep      : # URL
